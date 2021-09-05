@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Play here: http://rnimn.github.io/3DUltimateTicTacToe
 
 ## Sep 4 Commit

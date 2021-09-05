@@ -69,14 +69,10 @@ export const FullMatrixRender = () => {
       if(nextTurnLocation === targetSubcubeId){
 
         toggleCube(targetCube);
-        console.log("targeted cubelet: ", targetCube.object.name % 27);
 
-        console.log("pre set: ", nextTurnLocation);
-        setSubCubeOpacity(nextTurnLocation, "#ababab");
+        setSubcubeColor(nextTurnLocation, "#ababab");
         nextTurnLocation = (targetCube.object.name % 27);
-        console.log("post set: ", nextTurnLocation);
-
-        setSubCubeOpacity(nextTurnLocation, "#94f77e");
+        setSubcubeColor(nextTurnLocation, "#94f77e");
 
       }
     }
@@ -92,7 +88,7 @@ export const FullMatrixRender = () => {
     }
   }
 
-  const setSubCubeOpacity = (subCube, color) => {
+  const setSubcubeColor = (subCube, color) => {
     for (var i = 0; i < 27; i ++){
       var currentColor = allCubes[i + (subCube * 27)].material.color.getHex();
       if (currentColor === 11250603 || currentColor === 9762686){
