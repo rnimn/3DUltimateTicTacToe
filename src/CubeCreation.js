@@ -58,7 +58,7 @@ export const getName = (largeCoords, smallCords)=> {
 }
 
 //Map coordinates of 3x3x3 cubes to integer id from 1-27
-const getSubName = (coords) => {
+export const getSubName = (coords) => {
 
     const id = coords[0] * 9 + coords[1] * 3 + coords[2]; 
     return(id)
